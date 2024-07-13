@@ -11,3 +11,17 @@ after install
 	- `sudo apt install rtl8822bu-dkms`
 	
 
+### preapre dev environment
+
+```
+mkdir ~/apps
+mkdir ~/apps/managedByAppImageLauncher
+
+mkdir ~/bin
+cp dev-environmment/bin/* ~/bin/
+
+
+mkdir ~/projects
+mkdir VMs
+```
+
