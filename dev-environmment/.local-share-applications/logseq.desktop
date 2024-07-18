@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Logseq
+Icon=/home/majky/apps/Logseq/logseq.png
+Exec=/home/majky/bin/logseq
+Comment=Logseq
+Categories=Notes;
+Terminal=false

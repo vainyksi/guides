@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Intellij IDEA
+Icon=/home/majky/apps/idea/bin/idea.png
+Exec=/home/majky/apps/idea/bin/idea.sh
+Comment=Intellij IDEA
+Categories=IDE;
+Terminal=false

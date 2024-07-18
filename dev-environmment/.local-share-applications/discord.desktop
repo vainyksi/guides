@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Discord
+Icon=/home/majky/apps/Discord/discord.png
+Exec=/home/majky/bin/discord
+Comment=Discord client
+Categories=Communication;
+Terminal=false

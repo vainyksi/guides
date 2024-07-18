@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Obsidian
+Icon=/home/majky/apps/obsidian/obsidian.png
+Exec=/home/majky/bin/obsidian
+Comment=Obsidian
+Categories=Notes;
+Terminal=false
+MimeType=x-scheme-handler/obsidian;text/html;
