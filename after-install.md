@@ -18,10 +18,14 @@ mkdir ~/apps
 mkdir ~/apps/managedByAppImageLauncher
 
 mkdir ~/bin
-cp dev-environmment/bin/* ~/bin/
+# cp -av dev-environmment/bin/* ~/bin/
+ln -s ~/apps/idea/bin/idea.sh ~/bin/idea
+ln -s ~/apps/Logseq/Logseq-linux-x64-0.9.13.AppImage ~/bin/logseq
+ln -s ~/apps/apache-maven/bin/mvn ~/bin/mvn
+ln -s ~/apps/obsidian/Obsidian-1.4.16.AppImage ~/bin/obsidian
 
 
 mkdir ~/projects
-mkdir VMs
+mkdir ~/VMs
 ```
 
