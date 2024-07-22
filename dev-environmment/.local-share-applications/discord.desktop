@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Name=Discord
-Icon=/home/majky/apps/Discord/discord.png
-Exec=/home/majky/bin/discord
+Icon={HOME_DIR}/apps/Discord/discord.png
+Exec={HOME_DIR}/bin/discord
 Comment=Discord client
 Categories=Communication;
 Terminal=false

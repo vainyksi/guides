@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Name=Logseq
-Icon=/home/majky/apps/Logseq/logseq.png
-Exec=/home/majky/bin/logseq
+Icon={HOME_DIR}/apps/Logseq/logseq.png
+Exec={HOME_DIR}/bin/logseq
 Comment=Logseq
 Categories=Notes;
 Terminal=false
