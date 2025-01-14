@@ -116,7 +116,8 @@ sudo apt-get install -y chrome-gnome-shell gnome-tweaks gnome-shell-extension-ma
 
 #### Install PDF editor
 wget https://code-industry.net/public/master-pdf-editor-5.9.86-qt5.x86_64.deb
-sudo dpkg -i master-pdf-editor-5.9.84-qt5.x86_64.deb
+sudo dpkg -i master-pdf-editor-5.9.86-qt5.x86_64.deb
+sudo apt install -y -f
 
 
 #### Setup Spotify
