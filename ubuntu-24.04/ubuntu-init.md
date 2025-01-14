@@ -14,15 +14,11 @@ sudo apt -y install curl
 
 #### Get & run initialization script
 ```sh
-sudo apt -y install git gitk
-
 mkdir ~/Downloads/init-ubuntu
 cd ~/Downloads/init-ubuntu
 
-#TODO reference specific file within public repository, so it is not needed to clone the whole repository
-git clone https://github.com/vainyksi/guides.git
-cd guides
-git checkout ubuntu-24.04
+wget https://raw.githubusercontent.com/vainyksi/guides/refs/heads/ubuntu-24.04/ubuntu-24.04/init-dev-env.sh
+chmod +x init-dev-env.sh
 ./init-dev-env.sh
 ```
 

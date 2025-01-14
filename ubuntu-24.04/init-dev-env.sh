@@ -121,3 +121,9 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo chmod 644 /etc/apt/sources.list.d/spotify.list
 sudo apt-get update && sudo apt-get install spotify-client
 
+--------------------------------------
+
+# Initialize Development tools
+
+sudo apt -y install git gitk
+
