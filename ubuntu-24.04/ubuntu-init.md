@@ -22,4 +22,11 @@ chmod +x init-dev-env.sh
 ./init-dev-env.sh
 ```
 
+#### Manual steps after development environment initialization
+
+Configure git, e.g.
+```
+git config --global user.email "michal.banik@siemens.com"
+git config --global user.name "Michal Banik"
+```
 
