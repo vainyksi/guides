@@ -8,8 +8,6 @@ sudo apt -y dist-upgrade
 sudo apt -y install curl
 
 
-sudo apt -y install git gitk
-
 mkdir ~/Downloads/init-ubuntu
 cd ~/Downloads/init-ubuntu
 
@@ -57,9 +55,9 @@ wget https://github.com/vainyksi/guides/raw/refs/heads/ubuntu-24.04/dev-environm
 mkdir ~/bin
 # cp -av dev-environmment/bin/* ~/bin/
 ln -s ~/apps/idea/bin/idea.sh ~/bin/idea
-ln -s ~/apps/Logseq/Logseq-linux-x64-0.9.13.AppImage ~/bin/logseq
+ln -s ~/apps/Logseq/Logseq-linux-x64.AppImage ~/bin/logseq
 ln -s ~/apps/apache-maven/bin/mvn ~/bin/mvn
-ln -s ~/apps/obsidian/Obsidian-1.4.16.AppImage ~/bin/obsidian
+ln -s ~/apps/obsidian/Obsidian.AppImage ~/bin/obsidian
 #TODO actual apps not included
 
 
@@ -133,5 +131,27 @@ sudo apt-get update && sudo apt-get install spotify-client
 
 # Initialize Development tools
 
+
+#### git & gitk
 sudo apt -y install git gitk
 
+
+#### Java
+wget https://cdn.azul.com/zulu/bin/zulu21.38.21-ca-jdk21.0.5-linux_amd64.deb
+sudo dpkg -i zulu21.38.21-ca-jdk21.0.5-linux_amd64.deb
+sudo apt install -y -f
+
+
+#### intellij IDEA
+wget https://download.jetbrains.com/idea/ideaIU-2024.3.1.1.tar.gz
+mkdir idea-IDE/
+tar -xvzf ideaIU-2024.3.1.1.tar.gz -C idea-IDE/
+mv idea-IDE/* ~/apps/idea/
+
+
+sudo apt install -y htop meld gimp
+sudo snap install vlc
+wget https://github.com/logseq/logseq/releases/download/0.10.9/Logseq-linux-x64-0.10.9.AppImage -o ~/apps/Logseq/Logseq-linux-x64.AppImage
+chmod +x ~/apps/Logseq/Logseq-linux-x64.AppImage
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.7.7/Obsidian-1.7.7.AppImage -o ~/apps/obsidian/Obsidian.AppImage
+chmod +x ~/apps/obsidian/Obsidian.AppImage
