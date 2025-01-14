@@ -39,10 +39,18 @@ mkdir ~/VMs
 
 
 
-#### prepare .desktop files
-cp dev-environmment/.local-share-applications/*.desktop ~/.local/share/applications/
-#TODO make this step independent of git repository
+#### prepare .desktop files with icons
+wget https://github.com/vainyksi/guides/raw/refs/heads/ubuntu-24.04/dev-environmment/.local-share-applications/discord.desktop
+wget https://github.com/vainyksi/guides/raw/refs/heads/ubuntu-24.04/dev-environmment/.local-share-applications/idea.desktop
+wget https://github.com/vainyksi/guides/raw/refs/heads/ubuntu-24.04/dev-environmment/.local-share-applications/logseq.desktop
+wget https://github.com/vainyksi/guides/raw/refs/heads/ubuntu-24.04/dev-environmment/.local-share-applications/obsidian.desktop
+cp *.desktop ~/.local/share/applications/
 sed -i 's@{HOME_DIR}@'"$HOME"'@g' ~/.local/share/applications/*.desktop
+
+mkdir ~/apps/Logseq/
+wget https://github.com/vainyksi/guides/raw/refs/heads/ubuntu-24.04/dev-environmment/apps/logseq.png -O ~/apps/Logseq/logseq.png
+mkdir ~/apps/obsidian/
+wget https://github.com/vainyksi/guides/raw/refs/heads/ubuntu-24.04/dev-environmment/apps/obsidian.png -O ~/apps/obsidian/obsidian.png
 
 
 #### prepare commands to run common apps
