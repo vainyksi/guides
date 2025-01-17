@@ -54,7 +54,7 @@ wget https://github.com/vainyksi/guides/raw/refs/heads/ubuntu-24.04/dev-environm
 #### prepare commands to run common apps
 mkdir ~/bin
 # cp -av dev-environmment/bin/* ~/bin/
-ln -s ~/apps/idea/bin/idea.sh ~/bin/idea
+ln -s ~/apps/idea/bin/idea ~/bin/idea
 ln -s ~/apps/Logseq/Logseq-linux-x64.AppImage ~/bin/logseq
 ln -s ~/apps/apache-maven/bin/mvn ~/bin/mvn
 ln -s ~/apps/obsidian/Obsidian.AppImage ~/bin/obsidian
