@@ -128,6 +128,14 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo chmod 644 /etc/apt/sources.list.d/spotify.list
 sudo apt-get update && sudo apt-get install spotify-client
 
+
+#### Setup Gnome-Network-Display to extend & share desktop via miracast
+# (https://gitlab.gnome.org/GNOME/gnome-network-displays)
+sudo apt install -y flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install -y flathub org.gnome.NetworkDisplays
+# flatpak run org.gnome.NetworkDisplays # to run network-display
+
 --------------------------------------
 
 # Initialize Development tools
