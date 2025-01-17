@@ -2,7 +2,7 @@
 Type=Application
 Name=Intellij IDEA
 Icon={HOME_DIR}/apps/idea/bin/idea.png
-Exec={HOME_DIR}/apps/idea/bin/idea.sh
+Exec={HOME_DIR}/apps/idea/bin/idea
 Comment=Intellij IDEA
 Categories=IDE;
 Terminal=false
