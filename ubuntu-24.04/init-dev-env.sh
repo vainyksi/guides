@@ -136,6 +136,13 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install -y flathub org.gnome.NetworkDisplays
 # flatpak run org.gnome.NetworkDisplays # to run network-display
 
+
+#### Install synaptics driver for DisplayLink to support HP universal docking stations
+wget https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
+sudo apt install ./synaptics-repository-keyring.deb
+sudo apt update
+sudo apt install -y displaylink-driver
+
 --------------------------------------
 
 # Initialize Development tools
