@@ -30,3 +30,15 @@ git config --global user.email "michal.banik@siemens.com"
 git config --global user.name "Michal Banik"
 ```
 
+#### Commands good to know
+
+run puppet agent and show result code
+```
+sudo puppet agent -t && echo $?
+```
+
+restart ZScaler
+```
+sudo service zsaservice restart
+```
+
