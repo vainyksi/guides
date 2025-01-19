@@ -2,7 +2,7 @@
 Initialize Ubuntu 24.04 development environment and basic tools.
 
 
-#### Basic Ubuntu updates
+## Basic Ubuntu updates
 ```sh
 lsb_release -a
 uname -a
@@ -12,7 +12,7 @@ sudo apt -y dist-upgrade
 sudo apt -y install curl
 ```
 
-#### Get & run initialization script
+## Get & run initialization script
 ```sh
 mkdir ~/Downloads/init-ubuntu
 cd ~/Downloads/init-ubuntu
@@ -22,23 +22,4 @@ chmod +x init-dev-env.sh
 ./init-dev-env.sh
 ```
 
-#### Manual steps after development environment initialization
-
-Configure git, e.g.
-```
-git config --global user.email "michal.banik@siemens.com"
-git config --global user.name "Michal Banik"
-```
-
-#### Commands good to know
-
-run puppet agent and show result code
-```
-sudo puppet agent -t && echo $?
-```
-
-restart ZScaler
-```
-sudo service zsaservice restart
-```
 
