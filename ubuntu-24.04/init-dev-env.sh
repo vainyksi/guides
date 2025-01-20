@@ -5,7 +5,7 @@ uname -a
 sudo apt update
 sudo apt list --upgradable
 sudo apt -y dist-upgrade
-sudo apt -y install curl
+sudo apt -y install curl net-tools
 
 
 mkdir ~/Downloads/init-ubuntu
@@ -26,10 +26,7 @@ dconf write /org/gnome/terminal/legacy/profiles:/:$profile/default-size-columns 
 # dconf reset /org/gnome/terminal/legacy/profiles:/:$profile/default-size-columns # reset terminal window width for default profile
 
 
-
-
-# initialize development environment
-
+#### initialize development environment directories
 mkdir ~/apps
 mkdir ~/apps/managedByAppImageLauncher
 mkdir ~/projects
