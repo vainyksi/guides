@@ -143,6 +143,10 @@ sudo apt install ./synaptics-repository-keyring.deb
 sudo apt update
 sudo apt install -y displaylink-driver
 
+
+#### Show battery percentage
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+
 --------------------------------------
 
 # Initialize Development tools
