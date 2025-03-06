@@ -2,7 +2,7 @@
 Type=Application
 Name=Obsidian
 Icon={HOME_DIR}/apps/obsidian/obsidian.png
-Exec={HOME_DIR}/bin/obsidian
+Exec={HOME_DIR}/bin/obsidian --no-sandbox %u
 Comment=Obsidian
 Categories=Notes;
 Terminal=false
