@@ -172,3 +172,9 @@ wget https://github.com/logseq/logseq/releases/download/0.10.9/Logseq-linux-x64-
 chmod +x ~/apps/Logseq/Logseq-linux-x64.AppImage
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.7.7/Obsidian-1.7.7.AppImage -o ~/apps/obsidian/Obsidian.AppImage
 chmod +x ~/apps/obsidian/Obsidian.AppImage
+
+
+#### Draw.io
+curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest | grep browser_download_url | grep 'amd64' | grep '.deb' | cut -d '"' -f 4 | wget -i -
+sudo apt install -f ./drawio-amd64-*.deb
+
