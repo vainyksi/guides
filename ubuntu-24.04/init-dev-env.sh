@@ -164,6 +164,8 @@ wget https://download.jetbrains.com/idea/ideaIU-2024.3.1.1.tar.gz
 mkdir idea-IDE/
 tar -xvzf ideaIU-2024.3.1.1.tar.gz -C idea-IDE/
 mv idea-IDE/* ~/apps/idea/
+##### disable ubuntu shortcut conflicting with IDEA's alt+f10
+gsettings set org.gnome.desktop.wm.keybindings toggle-maximized []
 
 
 sudo apt install -y htop meld gimp
