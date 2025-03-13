@@ -30,3 +30,30 @@ https://askubuntu.com/questions/1016945/cant-select-multiple-tabs-in-chrome
 
 use `Classic` theme instead of the default `GTK` theme
 change the theme settings in chrome://settings/appearance
+
+## Smartcard Notes
+
+**!!!=== work-in-progress ===!!!**
+
+#### Usefull Commands for smartcard reader
+```
+pcsc_scan
+```
+```
+pkcs15-tool --list-certificates
+```
+```
+sudo systemctl status pcscd.service
+```
+```
+lsusb | grep Smartcard
+```
+
+usefull tools:
+```
+pcsc_scan
+p11-kit
+pkcs15-tool
+p11tool
+```
+
